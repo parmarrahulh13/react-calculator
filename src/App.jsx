@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
-import Button from './Button'
+import Calculator from './Calculator'
 
 function App() {
   
 
   return (
     <>
-     <Button/>
+     <Calculator/>
     </>
   )
 }

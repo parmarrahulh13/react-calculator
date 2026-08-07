@@ -1,23 +1,44 @@
-import { useState } from "react";
+import "./Button.css";
 
-function Button() {
-
-  const [count, setCount] = useState(0);
+function Button({handleClick}) {
+  const number = [
+    "AC",
+    "%",
+    "/",
+    "backspace",
+    "7",
+    "8",
+    "9",
+    "*",
+    "4",
+    "5",
+    "6",
+    "-",
+    "1",
+    "2",
+    "3",
+    "+",
+    "00",
+    "0",
+    ".",
+    "=",
+  ];
 
   return (
     <>
-      <p>{count}</p>
-
-      <button
-        onClick={() => setCount(count + 1)}
-      >
-        +
-      </button>
+      <div className="calculator-btn">
+        <div className="btn">
+          {number.map((number) => {
+            return (
+              <button key={number} onClick={() => handleClick(number)}>
+                {number}
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }
 
-export default Button
-
-
-
+export default Button;

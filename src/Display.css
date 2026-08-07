@@ -1,0 +1,8 @@
+.display{
+    height: 100px;
+    width: 400px;
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    text-align: right;
+}

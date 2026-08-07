@@ -1,8 +1,13 @@
-button{
-    height: 20px;
-    width: 50px;
-    
+
+.btn{
+    height: 600px;
+    width: 400px;
+    background: #000;
+    /* display: flex; */
+
 }
-p{
-    font-size: 40px;
+.btn button{
+    height: 120px;
+    width: 100px;
+    
 }
