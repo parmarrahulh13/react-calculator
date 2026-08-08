@@ -1,13 +1,12 @@
-
-.btn{
-    height: 600px;
-    width: 400px;
-    background: #000;
-    /* display: flex; */
-
+.btn {
+  height: 600px;
+  width: 400px;
+  background: #182b3a;
+  /* display: flex; */
 }
-.btn button{
-    height: 120px;
-    width: 100px;
-    
+.btn button {
+  height: 110px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 10px;
 }

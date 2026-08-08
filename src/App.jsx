@@ -1,16 +1,14 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import Calculator from './Calculator'
+import "./App.css";
+import Calculator from "./Calculator";
 
 function App() {
-  
-
   return (
-    <>
-     <Calculator/>
-    </>
-  )
+    <div className="app">
+      <Calculator />
+    </div>
+  );
 }
 
-export default App
+export default App;

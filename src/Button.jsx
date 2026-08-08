@@ -1,6 +1,6 @@
 import "./Button.css";
 
-function Button({handleClick}) {
+function Button({ handleClick }) {
   const number = [
     "AC",
     "%",
@@ -31,7 +31,11 @@ function Button({handleClick}) {
           {number.map((number) => {
             return (
               <button key={number} onClick={() => handleClick(number)}>
-                {number}
+                {number === "backspace" ? (
+                  <i className="fa-solid fa-delete-left"></i>
+                ) : (
+                  number
+                )}
               </button>
             );
           })}
