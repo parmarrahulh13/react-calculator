@@ -30,7 +30,9 @@ function Button({ handleClick }) {
         <div className="btn">
           {number.map((number) => {
             return (
-              <button key={number} onClick={() => handleClick(number)}>
+              <button key={number}
+                 className={number === "=" ? "equal-btn" : ""}
+                 onClick={() => handleClick(number)}>
                 {number === "backspace" ? (
                   <i className="fa-solid fa-delete-left"></i>
                 ) : (

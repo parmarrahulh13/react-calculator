@@ -1,12 +1,50 @@
 .btn {
-  height: 600px;
   width: 400px;
-  background: #182b3a;
-  /* display: flex; */
+  padding: 15px;
+
+  background: rgba(10, 10, 15, 0.92);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  border-radius: 0 0 25px 25px;
 }
+
 .btn button {
-  height: 110px;
-  width: 100px;
-  border-radius: 50px;
-  margin-top: 10px;
+  height: 80px;
+
+  border: none;
+  border-radius: 18px;
+
+  background: #181c24;
+  color: white;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.08);
+
+  transition: 0.15s;
+}
+
+.btn button:hover {
+  background: #242a34;
+}
+
+.btn button:active {
+  transform: scale(0.93);
+}
+.equal-btn {
+  background: #ff9500 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.equal-btn:hover {
+  background: #ffad33 !important;
 }
